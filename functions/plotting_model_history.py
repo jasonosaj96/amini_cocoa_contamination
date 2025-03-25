@@ -1,8 +1,10 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
-def plot_training_history(history, fold_histories=None, save_path=None):
+
+def plot_training_history(history, fold_histories=None, save_path=None, model_name=None):
     """
     Plot training and validation metrics history.
     
@@ -88,7 +90,15 @@ def plot_training_history(history, fold_histories=None, save_path=None):
         axes[1].grid(alpha=0.3)
     
     plt.tight_layout()
-    if save_path:
-        plt.savefig(save_path)
+
+    path_to_save = history.get('model_path', None)
+    model_name = history.get('model_name', None)
+    if path_to_save:
+        # Get the dir name from the model path
+        save_path = os.path.dirname(path_to_save)
+
+        path_to_save_history = os.path.join(save_path, model_name.split('.')[0] + '_history.png')
+        # Save the plot with the model name
+        plt.savefig(path_to_save_history,  bbox_inches='tight')
 
     return plt # return the plt module so you can use plt.show() outside.

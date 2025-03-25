@@ -18,3 +18,13 @@ yolo_dataset/val/*
 !yolo_dataset/val/.gitkeep
 yolo11n.pt
 yolo11s.pt
+object_detection_models/*
+!object_detection_models/.gitkeep
+improved_yolo_dataset/*
+!improved_yolo_dataset/.gitkeep
+yolo_output/*
+!yolo_output/.gitkeep
+yolov11_plant_detection/*
+!yolov11_plant_detection/.gitkeep
+validation_viz/*
+!validation_viz/.gitkeep
