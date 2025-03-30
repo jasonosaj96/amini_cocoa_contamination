@@ -31,3 +31,8 @@ validation_viz/*
 yolov11_cv_s/*
 yolo_dataset_kfold_normed/*
 pretrained_leaf_yolo.pt_output/*
+Cocoa_Disease_Starter_Notebook.ipynb
+train_yolo_model.py
+train_yolo_improved.ipynb
+train_yolo_model.py
+train_rcnn_from_scratch_improved.ipynb
