@@ -28,3 +28,6 @@ yolov11_plant_detection/*
 !yolov11_plant_detection/.gitkeep
 validation_viz/*
 !validation_viz/.gitkeep
+yolov11_cv_s/*
+yolo_dataset_kfold_normed/*
+pretrained_leaf_yolo.pt_output/*
