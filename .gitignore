@@ -36,3 +36,4 @@ train_yolo_model.py
 train_yolo_improved.ipynb
 train_yolo_model.py
 train_rcnn_from_scratch_improved.ipynb
+various/*
